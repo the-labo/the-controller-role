@@ -29,7 +29,8 @@
   },
   "homepage": "https://github.com/the-labo/the-controller-role#readme",
   "dependencies": {
-    "the-controller-base": "^1.0.0",
+    "the-controller-base": "^2.0.2",
+    "the-error": "^1.1.1",
     "the-resource-user": "^2.0.2"
   },
   "devDependencies": {
@@ -43,7 +44,7 @@
     "the-script-release": "^1.0.6",
     "the-script-share": "^1.0.5",
     "the-script-update": "^1.0.0",
-    "the-server": "^2.0.2",
+    "the-server": "^2.0.13",
     "the-templates": "^1.0.10"
   },
   "engines": {

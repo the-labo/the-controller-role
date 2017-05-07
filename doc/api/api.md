@@ -1,4 +1,4 @@
-# the-controller-role@1.0.0
+# the-controller-role@1.0.1
 
 Role controller for the-server
 
@@ -6,9 +6,10 @@ Role controller for the-server
   + [create(args)](#the-controller-role-function-create)
 + [`TheRoleCtrl`](#the-controller-role-classes) Class
   + [new TheRoleCtrl()](#the-controller-role-classes-the-role-ctrl-constructor)
-  + [ctrl.grant(user, roleCode)](#the-controller-role-classes-the-role-ctrl-grant)
-  + [ctrl.revoke(user, roleCode)](#the-controller-role-classes-the-role-ctrl-revoke)
-  + [ctrl.hasRole(user, roleCode)](#the-controller-role-classes-the-role-ctrl-hasRole)
+  + [ctrl.grantTo(user, roleCode)](#the-controller-role-classes-the-role-ctrl-grantTo)
+  + [ctrl.revokeFrom(user, roleCode)](#the-controller-role-classes-the-role-ctrl-revokeFrom)
+  + [ctrl.hasAnyOf()](#the-controller-role-classes-the-role-ctrl-hasAnyOf)
+  + [ctrl.has()](#the-controller-role-classes-the-role-ctrl-has)
 
 ## Functions
 
@@ -44,9 +45,9 @@ Constructor of TheRoleCtrl class
 
 
 
-<a class='md-heading-link' name="the-controller-role-classes-the-role-ctrl-grant" ></a>
+<a class='md-heading-link' name="the-controller-role-classes-the-role-ctrl-grantTo" ></a>
 
-### ctrl.grant(user, roleCode) -> `Promise.<boolean>`
+### ctrl.grantTo(user, roleCode) -> `Promise.<boolean>`
 
 Grant a role to user
 
@@ -56,9 +57,9 @@ Grant a role to user
 | roleCode | string | Role code string |
 
 
-<a class='md-heading-link' name="the-controller-role-classes-the-role-ctrl-revoke" ></a>
+<a class='md-heading-link' name="the-controller-role-classes-the-role-ctrl-revokeFrom" ></a>
 
-### ctrl.revoke(user, roleCode) -> `Promise.<boolean>`
+### ctrl.revokeFrom(user, roleCode) -> `Promise.<boolean>`
 
 Revoke a role from user
 
@@ -68,17 +69,17 @@ Revoke a role from user
 | roleCode | string | Role code string |
 
 
-<a class='md-heading-link' name="the-controller-role-classes-the-role-ctrl-hasRole" ></a>
+<a class='md-heading-link' name="the-controller-role-classes-the-role-ctrl-hasAnyOf" ></a>
 
-### ctrl.hasRole(user, roleCode) -> `Promise.<boolean>`
+### ctrl.hasAnyOf() -> `Promise.<boolean>`
 
-Has a role or not
+Has any of roles
 
-| Param | Type | Description |
-| ----- | --- | -------- |
-| user | UserEntity | Use to grand |
-| roleCode | string | Role code string |
+<a class='md-heading-link' name="the-controller-role-classes-the-role-ctrl-has" ></a>
 
+### ctrl.has() -> `Promise.<boolean>`
+
+Check if has a role for signed user
 
 
 

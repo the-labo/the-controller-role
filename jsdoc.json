@@ -17,7 +17,7 @@
       },
       "functions": [
         {
-          "name": "grant",
+          "name": "grantTo",
           "access": "",
           "virtual": false,
           "description": "Grant a role to user",
@@ -42,11 +42,11 @@
           "examples": [],
           "returns": {
             "type": "Promise.<boolean>",
-            "description": "True if newly added. False if alredy has the one"
+            "description": "True if newly added. False if already has the one"
           }
         },
         {
-          "name": "revoke",
+          "name": "revokeFrom",
           "access": "",
           "virtual": false,
           "description": "Revoke a role from user",
@@ -75,28 +75,23 @@
           }
         },
         {
-          "name": "hasRole",
+          "name": "hasAnyOf",
           "access": "",
           "virtual": false,
-          "description": "Has a role or not",
-          "parameters": [
-            {
-              "name": "user",
-              "type": "UserEntity",
-              "description": "Use to grand",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            },
-            {
-              "name": "roleCode",
-              "type": "string",
-              "description": "Role code string",
-              "default": "",
-              "optional": "",
-              "nullable": ""
-            }
-          ],
+          "description": "Has any of roles",
+          "parameters": [],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<boolean>",
+            "description": ""
+          }
+        },
+        {
+          "name": "has",
+          "access": "",
+          "virtual": false,
+          "description": "Check if has a role for signed user",
+          "parameters": [],
           "examples": [],
           "returns": {
             "type": "Promise.<boolean>",

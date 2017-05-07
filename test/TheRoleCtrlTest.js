@@ -23,21 +23,23 @@ describe('the-role-ctrl', () => {
     db.load(TheUserResource.Role, 'UserRole')
 
     const { User, UserRole } = db.resources
-
+    const session = {}
     let ctrl = new TheRoleCtrl({
       app: { db },
-      session: {}
+      session
     })
     ok(ctrl)
 
     let user01 = await User.create({ name: 'user01' })
     ok(user01)
 
-    await ctrl.grant(user01, 'admin')
-    // ok(await ctrl.hasRole(user01, 'admin'))
-    //
-    // await ctrl.revoke(user01, 'admin')
-    // ok(!await ctrl.hasRole(user01, 'admin'))
+    session.signed = user01
+
+    await ctrl.grantTo(user01, 'admin')
+    ok(await ctrl.has('admin'))
+
+    await ctrl.revokeFrom(user01, 'admin')
+    ok(!await ctrl.has('admin'))
 
   })
 })
