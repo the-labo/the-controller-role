@@ -1,0 +1,132 @@
+{
+  "classes": [
+    {
+      "name": "TheRoleCtrl",
+      "description": "",
+      "extends": [
+        "TheCtrl"
+      ],
+      "access": "",
+      "virtual": false,
+      "fires": "",
+      "constructor": {
+        "name": "TheRoleCtrl",
+        "description": "Role controller for the-server",
+        "parameters": [],
+        "examples": []
+      },
+      "functions": [
+        {
+          "name": "grant",
+          "access": "",
+          "virtual": false,
+          "description": "Grant a role to user",
+          "parameters": [
+            {
+              "name": "user",
+              "type": "UserEntity",
+              "description": "Use to grand",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "roleCode",
+              "type": "string",
+              "description": "Role code string",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<boolean>",
+            "description": "True if newly added. False if alredy has the one"
+          }
+        },
+        {
+          "name": "revoke",
+          "access": "",
+          "virtual": false,
+          "description": "Revoke a role from user",
+          "parameters": [
+            {
+              "name": "user",
+              "type": "UserEntity",
+              "description": "Use to grand",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "roleCode",
+              "type": "string",
+              "description": "Role code string",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<boolean>",
+            "description": "True if revoked. False if the use has not one"
+          }
+        },
+        {
+          "name": "hasRole",
+          "access": "",
+          "virtual": false,
+          "description": "Has a role or not",
+          "parameters": [
+            {
+              "name": "user",
+              "type": "UserEntity",
+              "description": "Use to grand",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            },
+            {
+              "name": "roleCode",
+              "type": "string",
+              "description": "Role code string",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": [],
+          "returns": {
+            "type": "Promise.<boolean>",
+            "description": ""
+          }
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "name": "create",
+      "access": "",
+      "virtual": false,
+      "description": "Create a TheRoleCtrl instance",
+      "parameters": [
+        {
+          "name": "args",
+          "type": "*",
+          "description": "",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
+      "examples": [],
+      "returns": {
+        "type": "TheRoleCtrl",
+        "description": ""
+      }
+    }
+  ]
+}
