@@ -1,6 +1,6 @@
 {
   "name": "the-controller-role",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Role controller for the-server",
   "main": "lib",
   "browser": "shim",
