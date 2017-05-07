@@ -33,7 +33,7 @@ describe('the-role-ctrl', () => {
     let user01 = await User.create({ name: 'user01' })
     ok(user01)
 
-    session.signed = user01
+    session.user = user01
 
     await ctrl.grantTo(user01, 'admin')
     ok(await ctrl.has('admin'))

@@ -1,9 +1,10 @@
-# the-controller-role@1.0.1
+# the-controller-role@1.0.2
 
 Role controller for the-server
 
 + Functions
   + [create(args)](#the-controller-role-function-create)
+  + [mixRoleCheck(BaseClass, roleCodes, options)](#the-controller-role-function-mix-role-check)
 + [`TheRoleCtrl`](#the-controller-role-classes) Class
   + [new TheRoleCtrl()](#the-controller-role-classes-the-role-ctrl-constructor)
   + [ctrl.grantTo(user, roleCode)](#the-controller-role-classes-the-role-ctrl-grantTo)
@@ -22,6 +23,19 @@ Create a TheRoleCtrl instance
 | Param | Type | Description |
 | ----- | --- | -------- |
 | args | * |  |
+
+<a class='md-heading-link' name="the-controller-role-function-mix-role-check" ></a>
+
+### mixRoleCheck(BaseClass, roleCodes, options) -> `function`
+
+Mix up controller class with sign check feature
+
+| Param | Type | Description |
+| ----- | --- | -------- |
+| BaseClass | function |  |
+| roleCodes | Array.&lt;string&gt; | Role codes |
+| options | Object | Optional settings |
+| options.only | Array.&lt;string&gt; | Action names to apply. |
 
 
 

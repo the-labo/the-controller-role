@@ -103,7 +103,7 @@ tryExample().catch((err) => console.error(err))
 API Guide
 -----
 
-+ [the-controller-role@1.0.1](./doc/api/api.md)
++ [the-controller-role@1.0.2](./doc/api/api.md)
   + [create(args)](./doc/api/api.md#the-controller-role-function-create)
 
 

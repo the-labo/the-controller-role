@@ -30,15 +30,16 @@
   "homepage": "https://github.com/the-labo/the-controller-role#readme",
   "dependencies": {
     "the-controller-base": "^2.0.2",
-    "the-error": "^1.1.1",
-    "the-resource-user": "^2.0.2"
+    "the-error": "^1.1.1"
   },
   "devDependencies": {
     "mocha": "^3.3.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "the-client": "^1.0.0",
+    "the-controller-sign": "^1.1.1",
     "the-db": "^3.0.1",
+    "the-resource-user": "^2.0.2",
     "the-script-build": "^1.3.4",
     "the-script-jsdoc": "^1.0.3",
     "the-script-release": "^1.0.6",
@@ -46,6 +47,9 @@
     "the-script-update": "^1.0.0",
     "the-server": "^2.0.13",
     "the-templates": "^1.0.10"
+  },
+  "peerDependencies": {
+    "the-controller-sign": ">=1"
   },
   "engines": {
     "node": ">=6",
