@@ -1,4 +1,4 @@
-# the-controller-role@1.0.2
+# the-controller-role@1.0.3
 
 Role controller for the-server
 

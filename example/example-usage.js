@@ -4,12 +4,11 @@ const { TheRoleCtrl } = require('the-controller-role')
 const theServer = require('the-server')
 
 async function tryExample () {
-
-  let server = theServer({ /*...*/ })
+  let server = theServer({ /* ... */ })
 
   server.register(
     class extends TheRoleCtrl { /* ... */},
-    'some'
+    'role'
   )
 
   server.listen(3000)
